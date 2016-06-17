@@ -4,21 +4,49 @@
     <meta charset="utf-8">
     <title>IG Scraper</title>
     <link rel="stylesheet" href="popup.css">
+    <script src="jquery.js"></script>
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1>IG Scraper</h1>
-    <button id="scrape">do something!</button>
-    <div class="success-alert" id="successAlert">
-      <div class="success-icon">
-        ICON
+    <div class="ig-brand">
+      <img src="igButton.png" class="ig-brand-button" alt="" />
+    </div>
+    <div class="default-view" id="defaultView">
+      <div class="icon-wrap">
+        <img src="info.png" class="icon" alt="" />
+        <span class="default-message">No Candidate Available</span>
       </div>
-      <div class="candidate-info">
-        INFO
-      </div>
-      <div class="restrak-link">
-        LINK
+      <div class="description">
+        In order to use this extension, please navigate to a profile of a candidate on LinkedIn or Career-Builder, the service will automatically run. Watch for the icon in the header to notify you of a match within ResTrak.
       </div>
     </div>
+    <!-- <div class="success-alert" id="successAlert">
+      <div class="icon-wrap">
+        <img src="success.png" class="icon" alt="" />
+        <span class="candidate-success">Canidate has been found!</span>
+      </div>
+      <div class="candidate-info">
+        <div class="info" id="candidateName">Samuel Grayson</div>
+        <div class="info" id="candidateEmail">samuel@gmail.com</div>
+        <div class="info" id="candidateNumber">123-123-1234</div>
+      </div>
+      <div class="restrak-link">
+        <a href="#" class="res-link">View Candidate</a>
+      </div>
+    </div> -->
+    <!-- <div class="error-alert" id="errorAlert">
+      <div class="icon-wrap">
+        <img src="error.png" class="icon" alt="" />
+        <span class="candidate-error">Canidate not found!</span>
+      </div>
+      <div class="candidate-info">
+        <div class="info" id="candidateName">Samuel Grayson</div>
+        <div class="info" id="candidateEmail">samuel@gmail.com</div>
+        <div class="info" id="candidateNumber">123-123-1234</div>
+      </div>
+      <div class="restrak-link">
+        <a href="#" class="res-link">Add Candidate</a>
+      </div>
+    </div> -->
   </body>
 </html>

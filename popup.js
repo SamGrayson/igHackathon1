@@ -1,21 +1,5 @@
 $(document).ready(function(){
-  // Called when the user clicks on the browser action.
-  chrome.browserAction.onClicked.addListener(function(tab) {
-      // No tabs or host permissions needed!
-      console.log('Turning ' + tab.url + ' red!');
-      chrome.tabs.executeScript({
-          code: 'document.body.style.backgroundColor="red"'
-      });
-  });
-
-  chrome.browserAction.onClicked.addListener(function (tab) {
-      // No tabs or host permissions needed!
-
-
-      chrome.tabs.executeScript({
-          code: 'console.log("bang!")'
-      });
-  });
+  chrome.browserAction.setIcon({path: "validate-search.png"});
 
   chrome.runtime.onMessage.addListener(
       function (request, sender, sendResponse) {
@@ -30,6 +14,5 @@ $(document).ready(function(){
               //sendResponse({farewell: "goodbye"});
 
           }
-
-      });  
+    });
 })
