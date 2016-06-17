@@ -16,6 +16,6 @@ $(document).ready(function(){
   var email = $('#EmailLink').html();
 
   chrome.runtime.sendMessage({email: email}, function (response) {
-      //console.log(response.farewell);
+
   });
 });

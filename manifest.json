@@ -16,7 +16,7 @@
     }
   ],
   "browser_action": {
-    "default_title": "Make this page red",
+    "default_title": "Candidate Query",
     "default_icon": "magnifier.png",
     "default_popup": "popup.html"
   },
