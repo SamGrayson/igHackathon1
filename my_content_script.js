@@ -2,18 +2,20 @@
 $(document).ready(function(){
   $('#name').html('Anthony!!');
 
-  var googlePromise;
+  //var googlePromise;
+  //
+  //googlePromise = $.get('https://www.googleapis.com/customsearch/v1?key=AIzaSyDO7iuN79IAgvymA5wdZVk8wSMh1_w2jx4&cx=017576662512468239146:omuauf_lfve&q=lectures');
+  //
+  //googlePromise.done(function(response){
+  //  console.log(response);
+  //})
+  //googlePromise.fail(function(response){
+  //  console.log('fail', response);
+  //})
 
-  googlePromise = $.get('https://www.googleapis.com/customsearch/v1?key=AIzaSyDO7iuN79IAgvymA5wdZVk8wSMh1_w2jx4&cx=017576662512468239146:omuauf_lfve&q=lectures');
+  var email = $('#EmailLink').html();
 
-  googlePromise.done(function(response){
-    console.log(response);
-  })
-  googlePromise.fail(function(response){
-    console.log('fail', response);
-  })
-
-  chrome.runtime.sendMessage({email: "hello"}, function (response) {
+  chrome.runtime.sendMessage({email: email}, function (response) {
       //console.log(response.farewell);
   });
 });
